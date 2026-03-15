@@ -49,7 +49,7 @@ with tabs[0]:
         c1,c2,c3,c4 = st.columns(4)
         c1.metric("Task Completion", f"{task_rate:.1f}%")
         c2.metric("Avg Attendance", f"{avg_att:.1f}%")
-        c3.metric("Expenses", f"${spend}")
+        c3.metric("Expenses", f"₹{spend}")
         c4.metric("Productivity", f"{score:.1f}/100")
 
         st.progress(int(score))
